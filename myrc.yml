@@ -6,10 +6,12 @@ spec :
   replicas : 3
   selector : 
     app : myapp
+
   template : 
     metadata : 
       labels :
         app : myapp
+        
     spec : 
       containers :
       - name : myapp-container
