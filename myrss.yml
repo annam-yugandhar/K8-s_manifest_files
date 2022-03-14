@@ -6,15 +6,15 @@ spec :
   replicas : 3
   selector :  
     app : mypyapp
-    version : 2.6.1
+    version : 2.6.2
   template : 
     metadata : 
       labels :
         app : mypyapp
-        version : 2.6.1
+        version : 2.6.2
     spec : 
       containers :
       - name : mypyapp-container
-        image : maha4iac/mahaonlinestore:1
+        image : maha4iac/mahaonlinestore:2
         ports : 
         - containerPort : 8080
