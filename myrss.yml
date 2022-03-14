@@ -1,0 +1,21 @@
+apiVersion : v1
+kind : ReplicationController
+metadata : 
+  name : mypyapp-rc
+spec : 
+  replicas : 3
+  selector : 
+    labels : 
+      app : mypyapp
+      version : 2.6.1
+  template : 
+    metadata : 
+      labels :
+        app : mypyapp
+        version : 2.6.1
+    spec : 
+      containers :
+      - name : mypyapp-container
+        image : maha4iac/mahaonlinestore:1
+        ports : 
+        - containerPort : 8080
