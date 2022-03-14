@@ -4,10 +4,9 @@ metadata :
   name : mypyapp-rc
 spec : 
   replicas : 3
-  selector : 
-    labels : 
-      app : mypyapp
-      version : 2.6.1
+  selector :  
+    app : mypyapp
+    version : 2.6.1
   template : 
     metadata : 
       labels :
